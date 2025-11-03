@@ -19,5 +19,46 @@
             "contact": "Get in Touch",
             "viewWork": "View Projects"
         }
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "Developer passionate about creating innovative solutions",
+        "intro": "I work as a Full Stack Developer at Meta, building dynamic user interfaces and efficient back-end services for a comprehensive system that manages hotel networks.",
+        "description": "I use React.js, Node.js, and PostgreSQL to enhance the system's functionality and operational efficiency, working closely with the team to understand business needs and deliver solutions that meet or exceed client expectations.",
+        "education": {
+            "title": "Education",
+            "degree": "Computer Engineering",
+            "institution": "Centro Universitário Facens",
+            "period": "2020 - 2025"
+        },
+        "experience": {
+            "title": "Experience",
+            "years": "2+ years",
+            "description": "Full Stack Development"
+        },
+        "passion": "I'm passionate about software development. I'm always eager to learn new things and improve my skills as a developer.",
+        "skills": {
+            "title": "Core Competencies",
+            "items": [
+                "React.js & Next.js",
+                "Angular & Vue.js",
+                "Node.js & NestJS",
+                "TypeScript",
+                "PostgreSQL & MongoDB",
+                "Java & Spring Boot",
+                "GraphQL & REST APIs",
+                "Docker & CI/CD"
+            ]
+        }
+    },
+    "projects": {
+        "title": "My Projects",
+        "subtitle": "Check out some of the projects I've developed",
+        "viewLive": "View Project",
+        "viewCode": "View Code",
+        "loading": "Loading projects...",
+        "error": "Error loading projects",
+        "noProjects": "No projects found",
+        "technologies": "Technologies"
     }
 }

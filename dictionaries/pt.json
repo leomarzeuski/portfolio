@@ -19,5 +19,46 @@
             "contact": "Entre em Contato",
             "viewWork": "Ver Projetos"
         }
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "subtitle": "Desenvolvedor apaixonado por criar soluções inovadoras",
+        "intro": "Atuo como Desenvolvedor Full Stack na Meta, construindo interfaces de usuário dinâmicas e serviços de back-end eficientes para um sistema abrangente que gerencia redes de hotéis.",
+        "description": "Utilizo React.js, Node.js e PostgreSQL para aprimorar a funcionalidade e eficiência operacional do sistema, colaborando de perto com a equipe para entender as necessidades do negócio e entregar soluções que atendam ou superem as expectativas dos clientes.",
+        "education": {
+            "title": "Formação",
+            "degree": "Engenharia da Computação",
+            "institution": "Centro Universitário Facens",
+            "period": "2020 - 2025"
+        },
+        "experience": {
+            "title": "Experiência",
+            "years": "2+ anos",
+            "description": "Desenvolvimento Full Stack"
+        },
+        "passion": "Sou apaixonado pela área de software. Estou sempre ansioso para aprender coisas novas e melhorar minhas habilidades como desenvolvedor.",
+        "skills": {
+            "title": "Principais Competências",
+            "items": [
+                "React.js & Next.js",
+                "Angular & Vue.js",
+                "Node.js & NestJS",
+                "TypeScript",
+                "PostgreSQL & MongoDB",
+                "Java & Spring Boot",
+                "GraphQL & REST APIs",
+                "Docker & CI/CD"
+            ]
+        }
+    },
+    "projects": {
+        "title": "Meus Projetos",
+        "subtitle": "Confira alguns dos projetos que desenvolvi",
+        "viewLive": "Ver Projeto",
+        "viewCode": "Ver Código",
+        "loading": "Carregando projetos...",
+        "error": "Erro ao carregar projetos",
+        "noProjects": "Nenhum projeto encontrado",
+        "technologies": "Tecnologias"
     }
 }
