@@ -45,7 +45,7 @@ export function Footer({ dict, lang }: FooterProps) {
   ]
 
   return (
-    <footer className="relative border-t border-white/10 bg-gradient-to-b from-transparent to-black/40 backdrop-blur-sm">
+    <footer className="relative border-t border-white/10 bg-linear-to-b from-transparent to-black/40 backdrop-blur-sm">
       <div className="container mx-auto max-w-6xl px-4 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export function Footer({ dict, lang }: FooterProps) {
             <Link href={`/${lang}`} className="inline-block">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
+                className="text-2xl font-bold bg-linear-to-r from-primary to-accent bg-clip-text text-transparent"
               >
                 LM
               </motion.div>
@@ -117,7 +117,7 @@ export function Footer({ dict, lang }: FooterProps) {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
           viewport={{ once: true }}
-          className="my-8 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+          className="my-8 h-px bg-linear-to-r from-transparent via-white/10 to-transparent"
         />
 
         {/* Copyright */}
