@@ -48,7 +48,7 @@ export function Header({ dict, lang }: HeaderProps) {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
+              className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text"
             >
               LM
             </motion.div>

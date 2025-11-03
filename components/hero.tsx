@@ -2,8 +2,8 @@
 
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
-import Silk from './Silk'
 import { Github, Linkedin, Mail, MapPin, ArrowDown } from 'lucide-react'
+import Silk from './Silk'
 
 interface HeroProps {
   dict: {
@@ -21,6 +21,7 @@ interface HeroProps {
 }
 
 export function Hero({ dict }: HeroProps) {
+
   return (
     <section
       id="hero"
@@ -32,7 +33,7 @@ export function Hero({ dict }: HeroProps) {
         transition={{ duration: 1.5 }}
         className="absolute inset-0 z-0"
       >
-        <Silk speed={5} scale={1} noiseIntensity={1.5} rotation={0} />
+        <Silk speed={5} scale={1} noiseIntensity={1.5} rotation={0} color="#7B7481" />
       </motion.div>
 
       <motion.div
@@ -42,55 +43,59 @@ export function Hero({ dict }: HeroProps) {
         className="container z-10 mx-auto max-w-6xl"
       >
         <div className="flex flex-col items-center text-center">
-          <p className="mb-4 text-lg font-medium text-white/80 md:text-xl">
+          <p className="mb-4 text-lg font-medium text-foreground/70 md:text-xl">
             {dict.greeting}
           </p>
 
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             {dict.name}
           </h1>
 
-          <h2 className="mb-6 text-2xl font-semibold text-white/90 sm:text-3xl md:text-4xl">
+          <h2 className="mb-6 text-2xl font-semibold sm:text-3xl md:text-4xl">
             {dict.title}
           </h2>
 
-          <div className="mb-4 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-            <p className="text-sm font-medium text-white md:text-base">
+          <div className="mb-4 rounded-full border border-border bg-muted px-4 py-2">
+            <p className="text-sm font-medium text-foreground md:text-base">
               {dict.skills}
             </p>
           </div>
 
-          <p className="mb-8 flex items-center gap-2 text-sm text-white/70">
+          <p className="mb-8 flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="h-4 w-4" />
             {dict.location}
           </p>
 
-          <p className="mb-10 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+          <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
             {dict.description}
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button
-              size="lg"
-              asChild
-              className="group border border-transparent bg-white text-black transition-all hover:bg-white/90 hover:shadow-lg hover:shadow-white/10"
-            >
-              <a href="#contact">
-                <Mail className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
-                {dict.cta.contact}
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="group border-white/20 bg-white/5 text-white backdrop-blur-md transition-all hover:border-white/40 hover:bg-white/10 hover:shadow-lg hover:shadow-white/10"
-            >
-              <a href="#projects">
-                {dict.cta.viewWork}
-                <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
-              </a>
-            </Button>
+            <motion.div>
+              <Button
+                size="lg"
+                asChild
+                className="group"
+              >
+                <a href="#contact">
+                  <Mail className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
+                  {dict.cta.contact}
+                </a>
+              </Button>
+            </motion.div>
+            <motion.div>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="group"
+              >
+                <a href="#projects">
+                  {dict.cta.viewWork}
+                  <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+                </a>
+              </Button>
+            </motion.div>
           </div>
 
           <div className="mt-10 flex items-center gap-6">
@@ -100,7 +105,7 @@ export function Hero({ dict }: HeroProps) {
               href="https://github.com/leomarzeuski"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/70 transition-colors hover:text-white"
+              className="text-muted-foreground transition-colors hover:text-foreground"
             >
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
@@ -111,7 +116,7 @@ export function Hero({ dict }: HeroProps) {
               href="https://linkedin.com/in/leonardo-marzeuski"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/70 transition-colors hover:text-white"
+              className="text-muted-foreground transition-colors hover:text-foreground"
             >
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
@@ -120,7 +125,7 @@ export function Hero({ dict }: HeroProps) {
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
               href="mailto:leonardo@example.com"
-              className="text-white/70 transition-colors hover:text-white"
+              className="text-muted-foreground transition-colors hover:text-foreground"
             >
               <Mail className="h-6 w-6" />
               <span className="sr-only">Email</span>
@@ -145,8 +150,8 @@ export function Hero({ dict }: HeroProps) {
             })
           }
         >
-          <span className="text-xs font-medium text-white/80">Scroll</span>
-          <ArrowDown className="h-5 w-5 text-white" />
+          <span className="text-xs font-medium text-muted-foreground">Scroll</span>
+          <ArrowDown className="h-5 w-5 text-foreground" />
         </motion.div>
       </motion.div>
     </section>
